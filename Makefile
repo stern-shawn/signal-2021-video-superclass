@@ -11,4 +11,3 @@ bootstrap:
 	npm i -g zx
 	chmod +x ./get-creds.mjs
 	./get-creds.mjs
-	python server.py
