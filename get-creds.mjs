@@ -1,7 +1,5 @@
 #!/usr/bin/env zx
 
-import { $, question } from 'zx';
-
 $.verbose = false;
 
 const accountSid = await question('What is your Twilio Account SID?: ');
