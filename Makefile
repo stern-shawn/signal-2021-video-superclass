@@ -8,4 +8,7 @@ bootstrap:
 	python3 -m venv venv
 	. ./venv/bin/activate
 	pip install -r requirements.txt
-	printf "TWILIO_ACCOUNT_SID=<your account SID>\nTWILIO_API_KEY=<your api key>\nTWILIO_API_SECRET=<your api key secret>" >> .env
+	npm i -g zx
+	chmod +x ./get-creds.mjs
+	./get-creds.mjs
+	python server.py
