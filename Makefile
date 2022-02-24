@@ -8,7 +8,7 @@ bootstrap:
 	sudo apt install -y python3.8-venv
 	python3 -m venv venv
 	. ./venv/bin/activate
-	pip install -r requirements.txt
+	pip install -r requirements.txt --user
 	npm i -g zx
 	chmod +x ./get-creds.mjs
 	./get-creds.mjs
